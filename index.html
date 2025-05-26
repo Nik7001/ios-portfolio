@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Narendra Thakur – iOS Developer Portfolio</title>
   <style>
-    /* Simple reset */
+    /* Reset */
     * {
       box-sizing: border-box;
     }
@@ -14,8 +14,8 @@
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
         Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
       margin: 0;
-      background-color: #fafafa;
-      color: #222;
+      background-color: #000; /* Black background */
+      color: #eee; /* Light text on dark bg */
       line-height: 1.6;
       padding: 20px;
       max-width: 800px;
@@ -28,24 +28,26 @@
       margin-bottom: 40px;
     }
 
+    /* Profile image styling */
     .profile-image {
       width: 140px;
       height: 140px;
-      object-fit: cover;
       border-radius: 50%;
-      display: block;
-      margin: 0 auto 20px auto;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      object-fit: cover;
+      border: 3px solid #1e90ff;
+      margin-bottom: 20px;
+      box-shadow: 0 0 12px #1e90ff;
     }
 
     header h1 {
       font-size: 2.5rem;
       margin-bottom: 0.25em;
+      color: #1e90ff; /* bright blue heading */
     }
 
     header p {
       font-size: 1.1rem;
-      color: #555;
+      color: #ccc;
       max-width: 600px;
       margin-left: auto;
       margin-right: auto;
@@ -56,46 +58,50 @@
     }
 
     section h2 {
-      border-bottom: 2px solid #333;
+      border-bottom: 2px solid #1e90ff;
       padding-bottom: 8px;
       margin-bottom: 20px;
       font-size: 1.8rem;
+      color: #1e90ff;
     }
 
     .projects-list {
       list-style: none;
       padding: 0;
       margin: 0;
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 20px;
     }
 
     .projects-list li {
-      background: white;
-      border-radius: 8px;
-      box-shadow: 0 2px 5px rgb(0 0 0 / 0.1);
-      padding: 15px 20px;
-      margin-bottom: 15px;
-      transition: box-shadow 0.2s ease;
+      background: #111; /* Dark gray card */
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(30, 144, 255, 0.4);
+      padding: 20px 25px;
+      transition: box-shadow 0.3s ease;
     }
 
     .projects-list li:hover {
-      box-shadow: 0 5px 15px rgb(0 0 0 / 0.15);
+      box-shadow: 0 8px 30px rgba(30, 144, 255, 0.7);
     }
 
     .project-title {
-      font-weight: 600;
-      font-size: 1.2rem;
-      margin-bottom: 6px;
+      font-weight: 700;
+      font-size: 1.3rem;
+      margin-bottom: 10px;
+      color: #1e90ff;
     }
 
     .project-desc {
-      margin-bottom: 8px;
-      color: #555;
+      margin-bottom: 12px;
+      color: #bbb;
     }
 
     .project-link {
-      color: #1e90ff;
+      color: #4fc3f7;
       text-decoration: none;
-      font-weight: 500;
+      font-weight: 600;
     }
 
     .project-link:hover {
@@ -103,8 +109,9 @@
     }
 
     .contact-info p {
-      margin: 8px 0;
+      margin: 10px 0;
       font-size: 1rem;
+      color: #ddd;
     }
 
     .contact-info a {
@@ -119,7 +126,7 @@
     footer {
       text-align: center;
       font-size: 0.9rem;
-      color: #777;
+      color: #555;
       margin-top: 50px;
     }
   </style>
