@@ -1,136 +1,169 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Narendra Thakur – iOS Developer Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <style>
+    /* Simple reset */
+    * {
+      box-sizing: border-box;
+    }
+
     body {
-      font-family: 'Inter', sans-serif;
-      background-color: #f4f4f4;
-      color: #1a1a1a;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+        Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
       margin: 0;
-    }
-    header {
-      background-color: #111;
-      color: #fff;
-      padding: 40px 20px;
-      text-align: center;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 2.8rem;
-    }
-    header p {
-      margin-top: 10px;
-      font-size: 1.1rem;
+      background-color: #fafafa;
+      color: #222;
+      line-height: 1.6;
+      padding: 20px;
       max-width: 800px;
       margin-left: auto;
       margin-right: auto;
     }
-    .section {
-      padding: 40px 20px;
-      max-width: 1000px;
-      margin: 0 auto;
+
+    header {
+      text-align: center;
+      margin-bottom: 40px;
     }
-    .section h2 {
-      font-size: 2rem;
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.25em;
+    }
+
+    header p {
+      font-size: 1.1rem;
+      color: #555;
+    }
+
+    section {
+      margin-bottom: 40px;
+    }
+
+    section h2 {
+      border-bottom: 2px solid #333;
+      padding-bottom: 8px;
       margin-bottom: 20px;
-      color: #007aff;
+      font-size: 1.8rem;
     }
-    .projects-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 30px;
+
+    .projects-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
     }
-    .project-card {
-      background-color: #fff;
-      padding: 20px;
-      border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+
+    .projects-list li {
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgb(0 0 0 / 0.1);
+      padding: 15px 20px;
+      margin-bottom: 15px;
+      transition: box-shadow 0.2s ease;
     }
-    .project-card h3 {
-      margin-top: 0;
+
+    .projects-list li:hover {
+      box-shadow: 0 5px 15px rgb(0 0 0 / 0.15);
+    }
+
+    .project-title {
+      font-weight: 600;
       font-size: 1.2rem;
+      margin-bottom: 6px;
     }
-    .project-card p {
-      font-size: 0.95rem;
+
+    .project-desc {
+      margin-bottom: 8px;
+      color: #555;
     }
-    .project-card a {
-      display: inline-block;
-      margin-top: 10px;
-      color: #007aff;
-      font-weight: bold;
+
+    .project-link {
+      color: #1e90ff;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .project-link:hover {
+      text-decoration: underline;
+    }
+
+    .contact-info p {
+      margin: 8px 0;
+      font-size: 1rem;
+    }
+
+    .contact-info a {
+      color: #1e90ff;
       text-decoration: none;
     }
+
+    .contact-info a:hover {
+      text-decoration: underline;
+    }
+
     footer {
       text-align: center;
-      background: #111;
-      color: #ccc;
-      padding: 20px;
-    }
-    .contact {
-      background: #eaeaea;
-      padding: 20px;
-      border-radius: 10px;
+      font-size: 0.9rem;
+      color: #777;
+      margin-top: 50px;
     }
   </style>
 </head>
 <body>
-<p><strong>Location:</strong> Indore, Madhya Pradesh (MP)</p>>
+  <header>
+    <h1>Narendra Thakur</h1>
+    <p>
+      As a Senior iOS Developer with a decade of hands-on experience, I specialize in crafting scalable, performant, and maintainable mobile applications using Swift, SwiftUI, and Objective-C.
+      I excel at implementing clean architecture principles and modern design patterns such as MVVM to build intuitive user interfaces and seamless user experiences.
+      Leveraging the latest iOS frameworks and technologies, I deliver polished, production-ready solutions that align perfectly with client goals and elevate user engagement.
+    </p>
+  </header>
 
+  <section>
+    <h2>🚀 Highlight Projects</h2>
+    <ul class="projects-list">
+      <li>
+        <div class="project-title">Zigly – Pet Store & Grooming</div>
+        <div class="project-desc">Premium pet care platform with grooming, shopping, and vet services.</div>
+        <a href="#" class="project-link" aria-label="View Zigly on App Store">View on App Store →</a>
+      </li>
+      <li>
+        <div class="project-title">Parkin</div>
+        <div class="project-desc">Smart parking solution featuring real-time slot availability and payments.</div>
+        <a href="#" class="project-link" aria-label="View Parkin on App Store">View on App Store →</a>
+      </li>
+      <li>
+        <div class="project-title">Le Concierge UAE</div>
+        <div class="project-desc">Luxury concierge and lifestyle booking app built for UAE market.</div>
+        <a href="#" class="project-link" aria-label="View Le Concierge UAE on App Store">View on App Store →</a>
+      </li>
+      <li>
+        <div class="project-title">MyXspot</div>
+        <div class="project-desc">Wealth and investment dashboard app for XSpot clients.</div>
+        <a href="#" class="project-link" aria-label="View MyXspot Web">View Web →</a>
+      </li>
+      <li>
+        <div class="project-title">Dubai Duty Free – Millennium Millionaire</div>
+        <div class="project-desc">Lottery and ticketing platform with international sweepstakes.</div>
+        <a href="#" class="project-link" aria-label="View Dubai Duty Free Web">View Web →</a>
+      </li>
+    </ul>
+  </section>
 
-<header>
-  <img src="profile.png" alt="Narendra Thakur" style="width: 150px; border-radius: 50%; margin-bottom: 20px; border: 4px solid white;">
+  <section class="contact-info">
+    <h2>📞 Contact Me</h2>
+    <p>Email: <a href="mailto:Narendrarit11@gmail.com">Narendrarit11@gmail.com</a></p>
+    <p>Phone: <a href="tel:+917000057426">+91 7000057426</a></p>
+    <p>Address: Indore, MP, India</p>
+    <p>LinkedIn: <a href="https://linkedin.com/in/narendra-thakur" target="_blank" rel="noopener noreferrer">linkedin.com/in/narendra-thakur</a></p>
+    <p>GitHub: <a href="https://github.com/Nik7001" target="_blank" rel="noopener noreferrer">github.com/Nik7001</a></p>
+  </section>
 
-  <h1>Narendra Thakur</h1>
-  <p>Welcome to my iOS app portfolio, where innovation meets craftsmanship. As an experienced  iOS developer, I’ve had the privilege of building intuitive and elegant mobile experiences that delight users.</p>
-</header>
-
-<section class="section">
-  <h2>🚀 Highlight Projects</h2>
-  <div class="projects-grid">
-    <div class="project-card">
-      <h3>Zigly – Pet Store & Grooming</h3>
-      <p>Premium pet care platform with grooming, shopping, and vet services.</p>
-      <a href="https://apps.apple.com/in/app/zigly-pet-store-grooming/id1611727136" target="_blank">View on App Store →</a>
-    </div>
-    <div class="project-card">
-      <h3>Parkin</h3>
-      <p>Smart parking solution featuring real-time slot availability and payments.</p>
-      <a href="https://apps.apple.com/in/app/parkin/id6657993734" target="_blank">View on App Store →</a>
-    </div>
-    <div class="project-card">
-      <h3>Le Concierge UAE</h3>
-      <p>Luxury concierge and lifestyle booking app built for UAE market.</p>
-      <a href="https://apps.apple.com/ae/app/le-concierge-uaes-super-app/id6479246783" target="_blank">View on App Store →</a>
-    </div>
-    <div class="project-card">
-      <h3>MyXspot</h3>
-      <p>Wealth and investment dashboard app for XSpot clients.</p>
-      <a href="https://myxspot.xspotwealth.com/register" target="_blank">View Web →</a>
-    </div>
-    <div class="project-card">
-      <h3>Dubai Duty Free – Millennium Millionaire</h3>
-      <p>Lottery and ticketing platform with international sweepstakes.</p>
-      <a href="https://www.dubaidutyfree.com/millennium-millionaire/category/MM" target="_blank">View Web →</a>
-    </div>
-  </div>
-</section>
-
-<section class="section contact">
-  <h2>📞 Contact Me</h2>
-  <p><strong>Email:</strong> Narendrarit11@gmail.com</p>
-  <p><strong>Phone:</strong> +91 7000057426</p>
-  <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/narendra-thakur-b39235b3" target="_blank">linkedin.com/in/narendra-thakur</a></p>
-  <p><strong>GitHub:</strong> <a href="https://github.com/Nik7001" target="_blank">github.com/Nik7001</a></p>
-</section>
-
-<footer>
-  &copy; 2025 Narendra Thakur. All rights reserved.
-</footer>
-
+  <footer>
+    <p>© 2025 Narendra Thakur. All rights reserved.</p>
+  </footer>
 </body>
 </html>
+
